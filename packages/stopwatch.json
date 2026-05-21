@@ -1,9 +1,0 @@
-{
-  "id": "stopwatch",
-  "name": "Cronometro",
-  "icon": "stopwatch",
-  "width": 360,
-  "height": 260,
-  "css": "",
-  "js": "AppManager.register('stopwatch',{init:function(b,win){b.innerHTML='<div style=\"font-size:18px;font-weight:600;color:var(--accent);text-align:center;margin-bottom:8px\">Cronometro</div><div id=\"sw-display\" style=\"font-size:56px;font-weight:300;color:var(--text-primary);text-align:center;padding:24px;font-family:Consolas,monospace;letter-spacing:2px\">00:00.00</div><div class=\"flex items-center gap-8 justify-center\"><button id=\"sw-start\" class=\"btn btn-primary\">Iniciar</button><button id=\"sw-reset\" class=\"btn\">Resetar</button></div>';b.className='p-16 flex-col';var d=TK.byId('sw-display'),run=false,t0=0,el=0,timer=null;function fmt(ms){var m=Math.floor(ms/60000);var s=Math.floor((ms%60000)/1000);var c=Math.floor((ms%1000)/10);return String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')+'.'+String(c).padStart(2,'0')}function tick(){el=Date.now()-t0;d.textContent=fmt(el)}TK.byId('sw-start').onclick=function(){if(run){clearInterval(timer);run=false;this.textContent='Continuar'}else{t0=Date.now()-el;timer=setInterval(tick,10);run=true;this.textContent='Pausar'}};TK.byId('sw-reset').onclick=function(){clearInterval(timer);run=false;el=0;d.textContent='00:00.00';TK.byId('sw-start').textContent='Iniciar'}}})"
-}

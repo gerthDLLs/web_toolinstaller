@@ -1,9 +1,0 @@
-{
-  "id": "tictactoe",
-  "name": "Jogo da Velha",
-  "icon": "tictactoe",
-  "width": 360,
-  "height": 420,
-  "css": "#ttt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-width:260px;margin:0 auto}.ttt-cell{aspect-ratio:1;background:var(--bg-secondary);border:none;border-radius:var(--radius);font-size:48px;font-weight:700;color:var(--text-primary);cursor:pointer;transition:background var(--transition)}.ttt-cell:hover{background:var(--bg-surface)}.ttt-cell.x{color:var(--accent)}.ttt-cell.o{color:var(--danger)}#ttt-status{text-align:center;font-size:14px;color:var(--text-secondary);margin:12px 0}",
-  "js": "AppManager.register('tictactoe',{init:function(b,win){b.innerHTML='<div style=\"font-size:18px;font-weight:600;color:var(--accent);text-align:center;margin-bottom:8px\">Jogo da Velha</div><div id=\"ttt-status\">Sua vez (X)</div><div id=\"ttt-grid\"></div><button id=\"ttt-reset\" class=\"btn\" style=\"margin:12px auto 0\">Reiniciar</button>';b.className='p-16 flex-col';var cells=[],turn='X',gameOver=false,grid=['','','','','','','','',''];var g=TK.byId('ttt-grid');var s=TK.byId('ttt-status');function check(){var w=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];for(var i=0;i<w.length;i++){var a=w[i][0],b=w[i][1],c=w[i][2];if(grid[a]&&grid[a]===grid[b]&&grid[a]===grid[c]){gameOver=true;s.textContent='Vencedor: '+grid[a]+'!';return}}if(grid.indexOf('')===-1){gameOver=true;s.textContent='Empate!';return}s.textContent='Vez de: '+turn}function render(){TK.empty(g);for(var i=0;i<9;i++){(function(idx){var cell=TK.el('button',{className:'ttt-cell'+(grid[idx]==='X'?' x':'')+(grid[idx]==='O'?' o':'')});cell.textContent=grid[idx];cell.onclick=function(){if(gameOver||grid[idx])return;grid[idx]=turn;turn=turn==='X'?'O':'X';render();check()};g.appendChild(cell)})()}}TK.byId('ttt-reset').onclick=function(){grid=['','','','','','','','',''];turn='X';gameOver=false;render();s.textContent='Sua vez (X)'};render()}})"
-}

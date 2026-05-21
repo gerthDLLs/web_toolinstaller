@@ -122,6 +122,15 @@
       "version": "1.0",
       "icon": "quiz",
       "author": "Web OS"
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft Launcher",
+      "description": "Eaglercraft 1.8.8 e 1.12.2 direto no navegador",
+      "version": "1.0",
+      "icon": "minecraft",
+      "author": "Web OS",
+      "customTitleBar": true
     }
   ]
 }

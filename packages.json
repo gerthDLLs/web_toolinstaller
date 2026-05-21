@@ -1,0 +1,127 @@
+{
+  "name": "Web OS Tool Installer",
+  "url": "https://github.com/gerthDLLs/web_toolinstaller",
+  "packages": [
+    {
+      "id": "calculator",
+      "name": "Calculadora",
+      "description": "Calculadora basica com operacoes aritmeticas",
+      "version": "1.0",
+      "icon": "calculator",
+      "author": "Web OS"
+    },
+    {
+      "id": "notepad",
+      "name": "Bloco de Notas",
+      "description": "Editor de texto simples para anotacoes rapidas",
+      "version": "1.0",
+      "icon": "notepad",
+      "author": "Web OS"
+    },
+    {
+      "id": "computer",
+      "name": "Computador",
+      "description": "Explorador de drives e dispositivos do sistema",
+      "version": "1.0",
+      "icon": "computer",
+      "author": "Web OS"
+    },
+    {
+      "id": "about",
+      "name": "Sobre",
+      "description": "Informacoes sobre o Web OS",
+      "version": "1.0",
+      "icon": "about",
+      "author": "Web OS"
+    },
+    {
+      "id": "settings",
+      "name": "Configuracoes",
+      "description": "Painel de configuracao do sistema com modo administrador",
+      "version": "1.0",
+      "icon": "settings",
+      "author": "Web OS"
+    },
+    {
+      "id": "taskmanager",
+      "name": "Gerenciador de Tarefas",
+      "description": "Monitora processos ativos, uso de memoria e permite encerrar processos",
+      "version": "1.0",
+      "icon": "taskmanager",
+      "author": "Web OS"
+    },
+    {
+      "id": "browser",
+      "name": "Navegador Web",
+      "description": "Navegador com abas, barra de endereco e suporte a iframes",
+      "version": "1.0",
+      "icon": "globe",
+      "author": "Web OS",
+      "customTitleBar": true
+    },
+    {
+      "id": "filemanager",
+      "name": "Gerenciador de Arquivos",
+      "description": "Navegador de arquivos virtual com pastas e documentos",
+      "version": "1.0",
+      "icon": "folder",
+      "author": "Web OS"
+    },
+    {
+      "id": "dice",
+      "name": "Dados",
+      "description": "Simulador de dados d4, d6, d8, d10, d12 e d20 com historico",
+      "version": "1.0",
+      "icon": "dice",
+      "author": "Web OS"
+    },
+    {
+      "id": "stopwatch",
+      "name": "Cronometro",
+      "description": "Cronometro digital com inicio, pausa e reset",
+      "version": "1.0",
+      "icon": "stopwatch",
+      "author": "Web OS"
+    },
+    {
+      "id": "tictactoe",
+      "name": "Jogo da Velha",
+      "description": "Jogo da velha clasico para dois jogadores",
+      "version": "1.0",
+      "icon": "tictactoe",
+      "author": "Web OS"
+    },
+    {
+      "id": "todo",
+      "name": "Lista de Tarefas",
+      "description": "Lista de tarefas com persistencia local e checkbox",
+      "version": "1.0",
+      "icon": "todo",
+      "author": "Web OS"
+    },
+    {
+      "id": "converter",
+      "name": "Conversor",
+      "description": "Conversor de unidades de temperatura, comprimento e peso",
+      "version": "1.0",
+      "icon": "converter",
+      "author": "Web OS"
+    },
+    {
+      "id": "password",
+      "name": "Gerador de Senhas",
+      "description": "Gerador de senhas seguras com opcoes personalizaveis",
+      "version": "1.0",
+      "icon": "password",
+      "author": "Web OS"
+    },
+    {
+      "id": "quiz",
+      "name": "Quiz",
+      "description": "Quiz de perguntas e respostas com pontuacao",
+      "version": "1.0",
+      "icon": "quiz",
+      "author": "Web OS"
+    }
+  ]
+}
